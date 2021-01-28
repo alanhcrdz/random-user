@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.card {
+    width: 450px;
+    height: 350px;
+    background-color:#fff;
+    box-shadow: 5px 3px 2px #2c3e50;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: 'black';
+}
+
+.picture {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.listStyle {
+    list-style: none;
+}
+.listStyle li {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+.location {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.location p {
+    margin-left: 6px;
+}
+.contact-list ul {
+    list-style:none;
+}
