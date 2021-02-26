@@ -13,7 +13,7 @@ const UserInfo = () => {
 
 
 
-    useEffect(() =>{
+    useEffect(() => {
 
         setLoading(true)
         fetch("https://api.randomuser.me/")
@@ -30,41 +30,41 @@ const UserInfo = () => {
                 })
             }).catch(err => { console.log(err) })
             .finally(() => { setLoading(false) })
-            
 
-    }, []) 
-       
-    
-   
-   
+
+    }, [])
+
+
+
+
     return (
-        
-                
-        <div className="card">
-            
-                     {loading ?
-                        <h2>Loading data...</h2> 
-                          :
-                          <h2>{data.name} {data.lastName}</h2>
-                         }
-                         
-                    
-                    <div className="picture">
-                        <img src={data.picture} alt="image of a fictitious user"/>
-                    </div>
 
-                    <div className="location">
-                        <p>{data.state},</p>
-                        <p>{data.country}</p>
-                    </div>
-                    <div className="contact-list">
-                        <ul>
-                            <li>{data.email}</li>
-                        </ul>
-                        
-                    </div>
-                    
-                
+
+        <div className="card">
+
+            {loading ?
+                <h2>Loading data...</h2>
+                :
+                <h2>{data.name} {data.lastName}</h2>
+            }
+
+
+            <div className="picture">
+                <img src={data.picture} alt="fictitious user" />
+            </div>
+
+            <div className="location">
+                <p>{data.state},</p>
+                <p>{data.country}</p>
+            </div>
+            <div className="contact-list">
+                <ul>
+                    <li>{data.email}</li>
+                </ul>
+
+            </div>
+
+
 
         </div>
 
